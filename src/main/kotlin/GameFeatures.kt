@@ -43,4 +43,5 @@ object GameFeaturesMessages {
     const val GAME_STARTED = "game_started"
     const val OTHER_PLAYER_DISCONNECTED = "Other player disconnected"
     const val INVALID_PASSWORD = "Invalid password"
+    const val SESSION_TIMED_OUT = "Session timed out"
 }
