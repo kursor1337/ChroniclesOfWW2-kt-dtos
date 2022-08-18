@@ -22,11 +22,14 @@ sealed class Routes(
     object Users : Routes("users") {
         object GET_ALL                     : Routes(node = "list",             parent = Users)
         class  GET_BY_LOGIN(login: String) : Routes(node = "list/${login}",    parent = Users)
+        object REGISTER                    : Routes(node = "register",         parent = Users)
+        object LOGIN                       : Routes(node = "login",            parent = Users)
+    }
+
+    object Account : Routes("account") {
         object CHANGE_PASSWORD             : Routes(node = "change_password)", parent = Users)
         object UPDATE_USER_INFO            : Routes(node = "update_userinfo",  parent = Users)
         object AUTH                        : Routes(node = "auth",             parent = Users)
-        object REGISTER                    : Routes(node = "register",         parent = Users)
-        object LOGIN                       : Routes(node = "login",            parent = Users)
     }
 
     object Game : Routes("game") {
