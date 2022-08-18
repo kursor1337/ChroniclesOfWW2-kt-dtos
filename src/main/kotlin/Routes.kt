@@ -5,7 +5,7 @@ sealed class Routes(
     val parent: Routes? = null
 ) {
 
-    fun absolutePath(baseUrl: String) = "https://$baseUrl$relativePath"
+    fun absolutePath(protocol: String, baseUrl: String) = "$protocol://$baseUrl$relativePath"
 
     val relativePath: String = (parent?.relativePath ?: "") + "/$node"
 
