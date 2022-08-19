@@ -32,6 +32,14 @@ data class JoinGameResponseDTO(
 )
 
 
+@Serializable
+data class WaitingGameInfoDTO(
+    val id: Int,
+    val initiatorLogin: String
+) {
+
+}
+
 object GameFeaturesMessages {
     const val SUCCESS = "Success"
     const val NO_GAME_WITH_SUCH_ID = "No game with such id"
