@@ -45,3 +45,22 @@ object GameFeaturesMessages {
     const val INVALID_PASSWORD = "Invalid password"
     const val SESSION_TIMED_OUT = "Session timed out"
 }
+
+
+
+@Serializable
+data class GameSessionDTO(
+    val type: GameSessionMessageType,
+    val message: String
+)
+
+
+enum class GameSessionMessageType {
+
+    CONNECT,
+    DISCONNECT,
+    GAME_EVENT,
+    MOVE,
+    ERROR,
+
+}
