@@ -52,6 +52,13 @@ object GameFeaturesMessages {
     const val OTHER_PLAYER_DISCONNECTED = "Other player disconnected"
     const val INVALID_PASSWORD = "Invalid password"
     const val SESSION_TIMED_OUT = "Session timed out"
+    const val REQUEST_FOR_ACCEPT = "request_for_accept"
+    const val REQUEST_GAME_DATA = "request_mission_info"
+    const val REJECTED = "rejected"
+    const val ACCEPTED = "accepted"
+    const val CANCEL_CONNECTION = "cancel_connection"
+    const val NOT_RECEIVED = "not received"
+    const val INVALID_JSON = "invalid json"
 }
 
 

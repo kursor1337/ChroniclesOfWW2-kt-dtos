@@ -33,7 +33,6 @@ sealed class Routes(
     }
 
     object Game : Routes("game") {
-        object WAITING_ROOM : Routes(node = "waiting_room", parent = Game)
         object SESSION      : Routes(node = "session", parent = Game)
         object CREATE       : Routes(node = "create", parent = Game)
         object JOIN         : Routes(node = "join", parent = Game)
