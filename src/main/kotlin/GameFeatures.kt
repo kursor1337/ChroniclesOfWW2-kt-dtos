@@ -10,7 +10,8 @@ data class CreateGameReceiveDTO(
     val password: String,
     val battle: Battle,
     val boardHeight: Int,
-    val boardWidth: Int
+    val boardWidth: Int,
+    val invertNations: Boolean
 )
 
 @Serializable
