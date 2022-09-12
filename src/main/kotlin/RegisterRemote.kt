@@ -12,6 +12,7 @@ data class RegisterReceiveDTO(
 @Serializable
 data class RegisterResponseDTO(
     val token: String?,
+    val expiresIn: Long,
     val message: String
 )
 
