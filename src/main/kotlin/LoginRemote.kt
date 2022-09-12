@@ -12,6 +12,7 @@ data class LoginReceiveDTO(
 @Serializable
 data class LoginResponseDTO(
     val token: String?,
+    val expiresIn: Long,
     val message: String
 )
 
