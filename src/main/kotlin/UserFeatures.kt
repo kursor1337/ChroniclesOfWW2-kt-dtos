@@ -10,6 +10,7 @@ data class UserInfo(
 
 @Serializable
 data class ChangePasswordReceiveDTO(
+    val currentPassword: String,
     val newPassword: String
 )
 
@@ -31,7 +32,8 @@ data class UpdateUserInfoResponseDTO(
 
 @Serializable
 data class DeleteUserReceiveDTO(
-    val login: String
+    val login: String,
+    val password: String
 )
 
 @Serializable
