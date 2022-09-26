@@ -31,6 +31,7 @@ sealed class Routes(
         object UPDATE_USER_INFO            : Routes(node = "update_userinfo",  parent = Users)
         object AUTH                        : Routes(node = "auth",             parent = Users)
         object DELETE                      : Routes(node = "delete",           parent = Users)
+        object GET_ACCOUNT_INFO            : Routes(node = "account_info",     parent = Users)
     }
 
     object Game : Routes("game") {
