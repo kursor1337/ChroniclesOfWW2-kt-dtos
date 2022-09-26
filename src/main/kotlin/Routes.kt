@@ -27,11 +27,11 @@ sealed class Routes(
     }
 
     object Account : Routes("account") {
-        object CHANGE_PASSWORD             : Routes(node = "change_password)", parent = Users)
-        object UPDATE_USER_INFO            : Routes(node = "update_userinfo",  parent = Users)
-        object AUTH                        : Routes(node = "auth",             parent = Users)
-        object DELETE                      : Routes(node = "delete",           parent = Users)
-        object GET_ACCOUNT_INFO            : Routes(node = "account_info",     parent = Users)
+        object CHANGE_PASSWORD             : Routes(node = "change_password)", parent = Account)
+        object UPDATE_USER_INFO            : Routes(node = "update_userinfo",  parent = Account)
+        object AUTH                        : Routes(node = "auth",             parent = Account)
+        object DELETE                      : Routes(node = "delete",           parent = Account)
+        object GET_ACCOUNT_INFO            : Routes(node = "account_info",     parent = Account)
     }
 
     object Game : Routes("game") {
