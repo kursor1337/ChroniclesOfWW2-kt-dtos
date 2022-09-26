@@ -41,6 +41,12 @@ data class DeleteUserResponseDTO(
     val message: String
 )
 
+@Serializable
+data class AccountInfo(
+    val login: String,
+    val username: String
+)
+
 object UserInfoMessages {
     const val SUCCESS = "Success"
     const val NO_SUCH_USER = LoginErrorMessages.NO_SUCH_USER
