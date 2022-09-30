@@ -36,7 +36,8 @@ data class JoinGameResponseDTO(
 @Serializable
 data class WaitingGameInfoDTO(
     val id: Int,
-    val initiatorLogin: String
+    val initiatorLogin: String,
+    val battleData: Battle.Data
 ) {
 
 }
