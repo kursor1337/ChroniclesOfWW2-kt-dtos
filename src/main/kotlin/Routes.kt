@@ -38,7 +38,7 @@ sealed class Routes(
         object SESSION      : Routes(node = "session", parent = Game)
         object CREATE       : Routes(node = "create", parent = Game)
         object JOIN         : Routes(node = "join", parent = Game)
-
+        object MATCH        : Routes(node = "match", parent = Game)
 
     }
 
