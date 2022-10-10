@@ -9,5 +9,5 @@ data class MatchingGameMessageDTO(
 )
 
 enum class MatchingGameMessageType {
-    MESSAGE, GAME_DATA, TIMEOUT, ACCEPT, REJECT
+    MESSAGE, GAME_DATA, TIMEOUT, ACCEPT, REJECT, INIT
 }
