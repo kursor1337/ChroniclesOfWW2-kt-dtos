@@ -8,6 +8,12 @@ data class MatchingGameMessageDTO(
     val message: String
 )
 
+@Serializable
+data class MatchingUserInfoDTO(
+    val login: String,
+    val score: Int
+)
+
 enum class MatchingGameMessageType {
     MESSAGE, GAME_DATA, TIMEOUT, ACCEPT, REJECT, INIT
 }
