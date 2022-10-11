@@ -15,5 +15,5 @@ data class MatchingUserInfoDTO(
 )
 
 enum class MatchingGameMessageType {
-    MESSAGE, GAME_DATA, TIMEOUT, ACCEPT, REJECT, INIT
+    MESSAGE, GAME_DATA, TIMEOUT, ACCEPT, REJECT, INIT, GAME_ID
 }
