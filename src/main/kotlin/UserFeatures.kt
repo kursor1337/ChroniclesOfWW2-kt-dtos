@@ -46,7 +46,8 @@ data class DeleteUserResponseDTO(
 data class AccountInfo(
     val login: String,
     val username: String,
-    val score: Int
+    val score: Int,
+    val placeInLeaderboard: Int
 )
 
 @Serializable
