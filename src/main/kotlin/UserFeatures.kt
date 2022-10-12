@@ -5,7 +5,8 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class UserInfo(
-    val username: String
+    val username: String,
+    val score: Int
 )
 
 @Serializable
@@ -44,7 +45,18 @@ data class DeleteUserResponseDTO(
 @Serializable
 data class AccountInfo(
     val login: String,
-    val username: String
+    val username: String,
+    val score: Int
+)
+
+@Serializable
+data class LeaderboardInfoResponseDTO(
+    val top: List<UserInfo>
+)
+
+@Serializable
+data class LeaderboardInfoReceiveDTO(
+    val quantity: Int
 )
 
 object UserInfoMessages {
