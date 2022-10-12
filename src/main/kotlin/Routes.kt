@@ -10,7 +10,6 @@ sealed class Routes(
     val relativePath: String = (parent?.relativePath ?: "") + "/$node"
 
     object Battles : Routes("battles") {
-
         object GET_ALL            : Routes(node = "list",     parent = Battles)
         class  GET_BY_ID(id: Int) : Routes(node = "list/$id", parent = Battles)
         object MY                 : Routes(node = "my",       parent = Battles)
@@ -24,6 +23,7 @@ sealed class Routes(
         class  GET_BY_LOGIN(login: String) : Routes(node = "list/${login}",    parent = Users)
         object REGISTER                    : Routes(node = "register",         parent = Users)
         object LOGIN                       : Routes(node = "login",            parent = Users)
+        object LEADERBOARD                 : Routes(node = "leaderboard",      parent = Users)
     }
 
     object Account : Routes("account") {
@@ -39,7 +39,6 @@ sealed class Routes(
         object CREATE       : Routes(node = "create", parent = Game)
         object JOIN         : Routes(node = "join", parent = Game)
         object MATCH        : Routes(node = "match", parent = Game)
-
     }
 
 
